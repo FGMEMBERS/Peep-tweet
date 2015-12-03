@@ -1,0 +1,64 @@
+<?xml version = "1.0"?>
+<!--
+************************************************************************
+Cessna 421/T37 STOL X
+Started Oct 2011  LesterBoffo
+************************************************************************
+-->
+
+<PropertyList>
+ <sim>
+       
+    <description>Peep-tweet</description>
+    <author> Helijah and Erik Hofman - LesterBoffo 'kitbashed' to JSB-FDM and animations</author>
+    <status>beta</status>
+
+         <startup>
+            <splash-texture>Aircraft/Peep-tweet/splash.jpg</splash-texture>
+    </startup>
+
+      <flight-model>jsb</flight-model>
+      <aero>Peep-tweet</aero>
+        
+  <sound>
+    <path>Aircraft/Peep-tweet/peep-tweet-sound.xml</path> 
+  </sound>
+
+        <model>
+            <path archive="y">Aircraft/Peep-tweet/Models/Peep-tweet.xml</path>
+            </model>
+
+   <systems>
+    <electrical>
+     <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+  </systems>
+
+        <view>
+   <internal archive="y">true</internal>
+   <config>
+    <pitch-offset-deg>-4.0</pitch-offset-deg>
+    <x-offset-m archive="y">-0.365</x-offset-m><!-- right/left -->
+    <y-offset-m archive="y">0.89</y-offset-m><!-- up/down -->
+    <z-offset-m archive="y">-0.75</z-offset-m><!-- aft/fore -->
+   </config>
+  </view>
+
+
+ </sim>
+
+  <nasal>
+      <file>Aircraft/Peep-tweet/Nasal/peep-tweet.nas</file>
+      <file>Aircraft/Peep-tweet/Nasal/lites2.nas</file>
+      <file>Aircraft/Peep-tweet/Nasal/liveries.nas</file>
+  </nasal>
+
+<engines>
+  <engine n="0">
+    <running>true</running>
+  </engine>
+  <engine n="1">
+    <running>true</running>
+  </engine>
+ </engines>
+</PropertyList>

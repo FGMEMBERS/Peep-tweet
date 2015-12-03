@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>mancheG</object-name>
+    <object-name>mancheD</object-name>
+    <object-name>throttleG</object-name>
+    <object-name>throttleD</object-name>
+    <object-name>mixtureG</object-name>
+    <object-name>mixtureD</object-name>
+    <object-name>engine-gauges</object-name>
+    
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.442 </y-m>
+      <z-m>  0.327 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> 0.090 </x-m>
+      <y-m> 0.271 </y-m>
+      <z-m> 0.327 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.084 </x-m>
+      <y-m> -0.348 </y-m>
+      <z-m>  0.327 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.084 </x-m>
+      <y-m> 0.363 </y-m>
+      <z-m> 0.327 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.084 </x-m>
+      <y-m> -0.255 </y-m>
+      <z-m>  0.327 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> 0.084 </x-m>
+      <y-m> 0.458 </y-m>
+      <z-m> 0.327 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.078 </x-m>
+      <y-m> -0.443 </y-m>
+      <z-m>  0.243 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.078 </x-m>
+      <y-m> 0.271 </y-m>
+      <z-m> 0.243 </z-m>
+    </offsets>
+  </model>
+
+  <!-- HDG -->
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/hdg/hdg.xml</path>
+    <offsets>
+      <x-m>  0.083 </x-m>
+      <y-m> -0.348 </y-m>
+      <z-m>  0.243 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/hdg/hdg.xml</path>
+    <offsets>
+      <x-m> 0.083 </x-m>
+      <y-m> 0.362 </y-m>
+      <z-m> 0.243 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.087 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m>  0.243 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> 0.087 </x-m>
+      <y-m> 0.459 </y-m>
+      <z-m> 0.243 </z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/Peep-tweet/Models/Panel/Instruments/engpanel/engine-panel.xml</path>
+    <offsets>
+      <x-m> -2.441 </x-m>
+      <y-m> 0.104 </y-m>
+      <z-m> -0.479 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Throttles -->
+  <animation>
+    <type>rotate</type>
+    <object-name>throttleG</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 84 </factor>
+    <center>
+      <x-m>  0.165 </x-m>
+      <y-m> -0.065 </y-m>
+      <z-m>  0.009 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>throttleD</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor> 84 </factor>
+    <center>
+      <x-m>  0.165 </x-m>
+      <y-m> -0.041 </y-m>
+      <z-m>  0.009 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Mixtures -->
+  <animation>
+    <type>rotate</type>
+    <object-name>mixtureG</object-name>
+    <property>controls/flight/flaps</property>
+    <factor> -77 </factor>
+    <center>
+      <x-m>  0.165 </x-m>
+      <y-m> -0.012 </y-m>
+      <z-m>  0.009 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>mixtureD</object-name>
+    <property>controls/flight/flaps</property>
+    <factor> -77 </factor>
+    <center>
+      <x-m> 0.165 </x-m>
+      <y-m> 0.012 </y-m>
+      <z-m> 0.009 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Propellers -->
+  <animation>
+    <type>rotate</type>
+    <object-name>propG</object-name>
+    <property>controls/flight/thrust-vectoring</property>
+    <factor> 50 </factor>
+    <center>
+      <x-m> 0.165 </x-m>
+      <y-m> 0.041 </y-m>
+      <z-m> 0.009 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>propD</object-name>
+    <property>controls/flight/thrust-vectoring</property>
+    <factor> 50 </factor>
+    <center>
+      <x-m> 0.165 </x-m>
+      <y-m> 0.065 </y-m>
+      <z-m> 0.009 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Manches -->
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheG</object-name>
+    <property>controls/flight/aileron</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep>  50 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep> -50 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.111 </x-m>
+      <y-m> -0.347 </y-m>
+      <z-m>  0.189 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheD</object-name>
+    <property>controls/flight/aileron</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep>  50 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep> -50 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.111 </x-m>
+      <y-m> 0.363 </y-m>
+      <z-m> 0.189 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>LesManches</name>
+    <object-name>mancheG</object-name>
+    <object-name>mancheD</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>LesManches</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep>  0.07 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind>  1 </ind><dep> -0.07 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

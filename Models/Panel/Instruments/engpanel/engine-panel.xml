@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>engine-gauges.ac</path>
+
+    <animation>
+        <type>select</type>
+            <object-name>Eng0-N1-99</object-name>
+        <condition>
+            <less-than>
+                <property>engines/engine[0]/n1</property>
+                <value>100.000</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Eng0-N1-100</object-name>
+        <condition>
+            <greater-than>
+                <property>engines/engine[0]/n1</property>
+                <value>99.999</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Eng1-N1-99</object-name>
+        <condition>
+            <less-than>
+                <property>engines/engine[1]/n1</property>
+                <value>100.000</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Eng1-N1-100</object-name>
+        <condition>
+            <greater-than>
+                <property>engines/engine[1]/n1</property>
+                <value>99.999</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Eng0-N2-99</object-name>
+        <condition>
+            <less-than>
+                <property>engines/engine[0]/n2</property>
+                <value>100.000</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Eng0-N2-100</object-name>
+        <condition>
+            <greater-than>
+                <property>engines/engine[0]/n2</property>
+                <value>99.999</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Eng1-N2-99</object-name>
+        <condition>
+            <less-than>
+                <property>engines/engine[1]/n2</property>
+                <value>100.000</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Eng1-N2-100</object-name>
+        <condition>
+            <greater-than>
+                <property>engines/engine[1]/n2</property>
+                <value>99.999</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Trb1warn</object-name>
+        <condition>
+            <greater-than>
+                <property>engines/engine[0]/n2</property>
+                <value>96</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+            <object-name>Trb2warn</object-name>
+        <condition>
+            <greater-than>
+                <property>engines/engine[1]/n2</property>
+                <value>96</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+<!-- #########################-->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Fan01</object-name>
+        <property>engines/engine[0]/n1</property>
+        <interpolation>
+            <entry><ind>20.0</ind><dep>0</dep></entry>
+            <entry><ind>90.0</ind><dep>0.2178</dep></entry>
+            <entry><ind>110.0</ind><dep>0.3555</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Fan02</object-name>
+        <property>engines/engine[1]/n1</property>
+        <interpolation>
+            <entry><ind>20.0</ind><dep>0</dep></entry>
+            <entry><ind>90.0</ind><dep>0.2178</dep></entry>
+            <entry><ind>110.0</ind><dep>0.3555	</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!-- engine 0 digital  -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan101</object-name>
+        <property>engines/engine[0]/n2</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan102</object-name>
+        <property>engines/engine[0]/n2</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan103</object-name>
+        <property>engines/engine[0]/n2</property>
+        <factor>1.0</factor>
+        <step>0.1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan104</object-name>
+        <property>engines/engine[0]/n2</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan105</object-name>
+        <property>engines/engine[0]/n2</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan106</object-name>
+        <property>engines/engine[0]/n2</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn101</object-name>
+        <property>engines/engine[0]/n1</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn102</object-name>
+        <property>engines/engine[0]/n1</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn103</object-name>
+        <property>engines/engine[0]/n1</property>
+        <factor>1.0</factor>
+        <step>0.1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn104</object-name>
+        <property>engines/engine[0]/n1</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn105</object-name>
+        <property>engines/engine[0]/n1</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn106</object-name>
+        <property>engines/engine[0]/n1</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!-- engine 1 digital  -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan201</object-name>
+        <property>engines/engine[1]/n2</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan202</object-name>
+        <property>engines/engine[1]/n2</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan203</object-name>
+        <property>engines/engine[1]/n2</property>
+        <factor>1.0</factor>
+        <step>0.1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan204</object-name>
+        <property>engines/engine[1]/n2</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan205</object-name>
+        <property>engines/engine[1]/n2</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>fan206</object-name>
+        <property>engines/engine[1]/n2</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn201</object-name>
+        <property>engines/engine[1]/n1</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn202</object-name>
+        <property>engines/engine[1]/n1</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn203</object-name>
+        <property>engines/engine[1]/n1</property>
+        <factor>1.0</factor>
+        <step>0.1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn204</object-name>
+        <property>engines/engine[1]/n1</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn205</object-name>
+        <property>engines/engine[1]/n1</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>trbn206</object-name>
+        <property>engines/engine[1]/n1</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!-- ################## -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>ITT01</object-name>
+        <property>engines/engine[0]/egt-degf</property>
+        <!-- factor>0.00096</factor -->
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0002</dep></entry>
+            <entry><ind>2900.0</ind><dep>0.53</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>ITT02</object-name>
+        <property>/engines/engine[1]/egt-degf</property>
+        <!-- factor>0.00096</factor -->
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0002</dep></entry>
+            <entry><ind>2900.0</ind><dep>0.53</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>FQty01</object-name>
+        <property>consumables/fuel/tank[0]/level-lbs</property>
+        <factor>0.000118</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>FQty02</object-name>
+        <property>consumables/fuel/tank[1]/level-lbs</property>
+        <factor>0.0016</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>FFlow01</object-name>
+        <property>engines/engine/fuel-flow_pph</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>2000</ind><dep>0.3538</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>FFlow02</object-name>
+        <property>engines/engine[1]/fuel-flow_pph</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>2000</ind><dep>0.3538</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>OilT01</object-name>
+        <property>engines/engine[0]/oilt-norm</property>
+        <factor>0.28</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>OilT02</object-name>
+        <property>engines/engine[1]/oilt-norm</property>
+        <factor>0.28</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>OilP01</object-name>
+        <property>engines/engine[0]/oil-pressure-psi</property>
+        <factor>-0.004</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>OilP02</object-name>
+        <property>engines/engine[1]/oil-pressure-psi</property>
+        <factor>-0.004</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+  </PropertyList>
